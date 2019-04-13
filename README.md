@@ -52,7 +52,7 @@ Creating a Python session in this directory gives you access to the modules even
 
 | Module Name | Description |
 |-------------|-------------|
-| cmath | A collection of mathematical functions |
+| ccodemath | A collection of mathematical functions |
 
 
 [authorcredit]: https://medium.com/@matthiasbitzer94

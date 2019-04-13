@@ -26,14 +26,14 @@ static PyMethodDef mainMethods[] = {
     {NULL, NULL, 0, NULL}
 };
 
-static PyModuleDef cmath = {
+static PyModuleDef ccodemath = {
     PyModuleDef_HEAD_INIT,
-    "cmath",
+    "ccodemath",
     "Factorial Calculation",
     -1,
     mainMethods
 };
 
-PyMODINIT_FUNC PyInit_cmath(void){
-    return PyModule_Create(&cmath);
+PyMODINIT_FUNC PyInit_ccodemath(void){
+    return PyModule_Create(&ccodemath);
 }
