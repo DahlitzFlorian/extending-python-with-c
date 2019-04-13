@@ -48,6 +48,33 @@ Change your working directory to the one containing the `.so` libraries (`.dll` 
 Creating a Python session in this directory gives you access to the modules even though they are not installed.
 
 
+### Docker
+
+If you want to test the modules in a Docker container to not mess up your own environment, you can run the following commands:
+
+```shell
+$ docker image build -t cmodules .
+$ docker container run --rm --name cmodules -it cmodules
+```
+
+After running the container a Python REPL is started were you can import the necessary modules.
+An example is given below.
+
+```shell
+Python 3.7.3 (default, Mar 27 2019, 23:40:30) 
+[GCC 6.3.0 20170516] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from ccodemath import factorial
+>>> factorial(6)
+720
+>>> factorial("6")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: an integer is required (got type str)
+>>> quit()
+```
+
+
 ## Available Modules
 
 | Module Name | Description |

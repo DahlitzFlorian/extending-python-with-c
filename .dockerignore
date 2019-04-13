@@ -1,0 +1,13 @@
+# build
+build/
+dist/
+
+# env
+venv/
+.venv/
+
+# Project files
+.vscode/
+.idea/
+README.md
+LICENSE
